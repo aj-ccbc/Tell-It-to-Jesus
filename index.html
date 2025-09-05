@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice Track</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: transparent;
+        color: black;
+        margin: 2px;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: transparent;
+          color: white;
+        }
+      }
+
+      .track {
+        margin-bottom: 7px;
+      }
+
+      .track-title {
+        font-weight: bold;
+        margin-bottom: 1px;
+      }
+
+      audio {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="track">
+      <label class="track-title" for="all-parts">All Parts:</label>
+      <audio id="all-parts" controls loop>
+        <source
+          src="https://github.com/aj-ccbc/CCBC-Tell-It-to-Jesus/raw/refs/heads/main/Sep4-AllParts.mp3"
+          type="audio/mp3"
+        />
+      </audio>
+    </div>
+
+    <div class="track">
+      <label class="track-title" for="tenor">Tenor:</label>
+      <audio id="tenor" controls loop>
+        <source
+          src="https://github.com/aj-ccbc/CCBC-Tell-It-to-Jesus/raw/refs/heads/main/Sep4-Tenor.mp3"
+          type="audio/mp3"
+        />
+      </audio>
+    </div>
+
+    <div class="track">
+      <label class="track-title" for="lead">Lead:</label>
+      <audio id="lead" controls loop>
+        <source
+          src="https://github.com/aj-ccbc/CCBC-Tell-It-to-Jesus/raw/refs/heads/main/Sep4-Lead.mp3"
+          type="audio/mp3"
+        />
+      </audio>
+    </div>
+
+    <div class="track">
+      <label class="track-title" for="bass">Bass:</label>
+      <audio id="bass" controls loop>
+        <source
+          src="https://github.com/aj-ccbc/CCBC-Tell-It-to-Jesus/raw/refs/heads/main/Sep4-Bass.mp3"
+          type="audio/mp3"
+        />
+      </audio>
+    </div>
+  </body>
+</html>
